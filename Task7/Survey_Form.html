@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub1">
+            Name<span class="req">*</span><br>
+            <!-- <div style="float:left"> -->
+                <input class ="textbox" type="text" id="first_name" required size="30"> &emsp;
+                
+            <!-- </div>
+            <div style="float:right"> -->
+                <input class ="textbox" type="text" id="last_name" required size="30"> <br>
+            <!-- </div> -->
+            <small style="font-size:  10px;padding: 0px;">First</small>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <small style="font-size:  10px;">Last</small>
+        </div>
+        <div class="sub1">
+            Email<span class="req">*</span><br>
+            <input class ="textbox" type="email" id="mail" required size="71.5">
+        </div>
+        <div class="sub1">
+            Your Experience<span class="req">*</span><br>
+                <span class="fa fa-star checked" style="padding: 0px;"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+        </div>
+        <div class="sub1">
+            <label class="normal">Overall, how would you rate us the experience with us?</label>
+            <br><br>
+            How satisfied you are with?<span class="req">*</span><br>
+            <table>
+                <tr class ="odd">
+                    <td class="odd_row" width="15%" ></td>
+                    <td class="even_row"> 
+                      <label class="normal">Very Unsatisfied</label>  
+                    </td>
+                    <td class="odd_row">
+                      <label class="normal">Unsatisfied</label>
+                    </td>  
+                    <td  class="even_row">
+                      <label class="normal">Neutral</label>
+                    </td>
+                    <td  class="odd_row">
+                        <label class="normal">Satisfied</label>
+                    </td> 
+                    <td  class="even_row">
+                        <label class="normal">Very Satisfied</label>
+                    </td> 
+                </tr>
+                <tr class ="even" >
+                    <td class="odd_row" width="15%">
+                        <label class="normal">Purchase</label>
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Very Unsatisfied" name="Purchase">
+                    </td>
+                    <td class="odd_row">
+                        <input type="radio" value="Unsatisfied" name="Purchase">
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Neutral" name="Purchase">
+                    </td>
+                    <td class="odd_row">
+                        <input type="radio" value="Satisfied" name="Purchase">
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Unsatisfied" name="Purchase">
+                    </td>
+                </tr>
+                <tr class ="odd" >
+                    <td class="odd_row" width="15%">
+                        <label class="normal">Service</label>
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Very Unsatisfied" name="Service">
+                    </td>
+                    <td class="odd_row">
+                        <input type="radio" value="Unsatisfied" name="Service">
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Neutral" name="Service">
+                    </td>
+                    <td class="odd_row">
+                        <input type="radio" value="Satisfied" name="Service">
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Unsatisfied" name="Service">
+                    </td>
+                </tr>
+                <tr class ="even">
+                    <td class="odd_row" width="15%">
+                        <label class="normal">Company Overall</label>
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Very Unsatisfied" name="Overall">
+                    </td>
+                    <td class="odd_row">
+                        <input type="radio" value="Unsatisfied" name="Overall">
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Neutral" name="Overall">
+                    </td>
+                    <td class="odd_row">
+                        <input type="radio" value="Satisfied" name="Overall">
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Unsatisfied" name="Overall">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sub1">
+            How likely are you to<span class="req">*</span><br>
+            <table>
+                <tr class ="odd">
+                    <td class="odd_row" width="15%" ></td>
+                    <td class="even_row"> 
+                      <label class="normal">Very Unlikely</label>  
+                    </td>
+                    <td class="odd_row">
+                      <label class="normal">Unlikely</label>
+                    </td>  
+                    <td  class="even_row">
+                      <label class="normal">Neutral</label>
+                    </td>
+                    <td  class="odd_row">
+                        <label class="normal">Likely</label>
+                    </td> 
+                    <td  class="even_row">
+                        <label class="normal">Very Likely</label>
+                    </td> 
+                </tr>
+                <tr class ="even" >
+                    <td class="odd_row" width="15%">
+                        <label class="normal">Buy from us again</label>
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Very Unlikely" name="buy_again">
+                    </td>
+                    <td class="odd_row">
+                        <input type="radio" value="Unlikely" name="buy_again">
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Neutral" name="buy_again">
+                    </td>
+                    <td class="odd_row">
+                        <input type="radio" value="Likely" name="buy_again">
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Unsatisfied" name="buy_again">
+                    </td>
+                </tr>
+                <tr class ="odd" >
+                    <td class="odd_row" width="15%">
+                        <label class="normal">Recommend our product to others </label>
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Very Unlikely" name="re_others">
+                    </td>
+                    <td class="odd_row">
+                        <input type="radio" value="Unlikely" name="re_others">
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Neutral" name="re_others">
+                    </td>
+                    <td class="odd_row">
+                        <input type="radio" value="Likely" name="re_others">
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Unsatisfied" name="re_others">
+                    </td>
+                </tr>
+                <tr class ="even">
+                    <td class="odd_row" width="15%">
+                        <label class="normal">Recommend our company to others</label>
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Very Unlikely" name="re_company">
+                    </td>
+                    <td class="odd_row">
+                        <input type="radio" value="Unlikely" name="re_company">
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Neutral" name="re_company">
+                    </td>
+                    <td class="odd_row">
+                        <input type="radio" value="Likely" name="re_company">
+                    </td>
+                    <td class="even_row">
+                        <input type="radio" value="Very Likely" name="re_company">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sub1">
+            Additional comments or suggestions<br>
+            <textarea cols="122" rows="5" style="text-align: left;"></textarea>  
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </div>
+</body>
+</html>
